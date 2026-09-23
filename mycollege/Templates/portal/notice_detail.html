@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ notice.title }}</h1>
+
+<p><strong>Category:</strong> {{ notice.category }}</p>
+
+<p>{{ notice.content }}</p>
+
+<p>
+    Published:
+    {{ notice.published_date }}
+</p>
+
+<a href="{% url 'notice_update' notice.pk %}">Edit</a>
+
+<a href="{% url 'notice_delete' notice.pk %}">Delete</a>
+
+<a href="{% url 'notice_list' %}">Back to Notices</a>
+
+{% endblock %}
