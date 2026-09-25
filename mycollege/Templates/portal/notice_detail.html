@@ -1,22 +1,28 @@
 {% extends "base.html" %}
 
+{% block title %}
+    {{ notice.title }} | Sunshine Galaxy College
+{% endblock %}
+
 {% block content %}
 
+<div class="notice-card">
 <h1>{{ notice.title }}</h1>
 
-<p><strong>Category:</strong> {{ notice.category }}</p>
-
-<p>{{ notice.content }}</p>
+<p>
+    <strong>Category:</strong>
+    {{ notice.category }}
+</p>
 
 <p>
-    Published:
+    {{ notice.content }}
+</p>
+
+<p>
+    <strong>Published:</strong>
     {{ notice.published_date }}
 </p>
 
-<a href="{% url 'notice_update' notice.pk %}">Edit</a>
-
-<a href="{% url 'notice_delete' notice.pk %}">Delete</a>
-
 <a href="{% url 'notice_list' %}">Back to Notices</a>
-
+</div>
 {% endblock %}

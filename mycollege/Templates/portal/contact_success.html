@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+Message Sent | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+
+<h1>Message Sent Successfully</h1>
+
+<p>
+    Thank you for contacting Sunshine Galaxy College.
+</p>
+
+<a href="{% url 'home' %}">
+    Return to Home
+</a>
+
+{% endblock %}

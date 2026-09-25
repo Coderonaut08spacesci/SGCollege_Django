@@ -21,7 +21,6 @@ class Notice(models.Model):
     )
     published_date = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
-
     def __str__(self):
         return self.title
 
@@ -90,3 +89,5 @@ class Admission(models.Model):
     )
 
     submitted_at = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return f"{self.name} - {self.course}"

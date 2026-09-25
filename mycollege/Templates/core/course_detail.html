@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ course.name }} | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+<div class="course-card">
+<h1>{{ course.name }}</h1>
+
+<p>
+    <strong>Department:</strong>
+    {{ course.department }}
+</p>
+
+<p>
+    <strong>Duration:</strong>
+    {{ course.duration }}
+</p>
+
+<p>
+    <strong>Description:</strong>
+    {{ course.description }}
+</p>
+
+<a href="{% url 'course_list' %}">
+    ← Back to Courses
+</a>
+
+</div>
+{% endblock %}

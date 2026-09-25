@@ -1,8 +1,21 @@
 {% extends "base.html" %}
 
+{% block title %}
+    {% if object %}
+        Update Notice
+    {% else %}
+        Create Notice
+    {% endif %}
+    | Sunshine Galaxy College
+{% endblock %}
+
 {% block content %}
 
-<h1>Notice Form</h1>
+{% if object %}
+    <h1>Update Notice</h1>
+{% else %}
+    <h1>Create Notice</h1>
+{% endif %}
 
 <form method="post">
 
@@ -10,10 +23,16 @@
 
     {{ form.as_p }}
 
-    <button type="submit">Save Notice</button>
+    {% if object %}
+        <button type="submit">Update Notice</button>
+    {% else %}
+        <button type="submit">Create Notice</button>
+    {% endif %}
 
 </form>
 
-<a href="{% url 'notice_list' %}">Cancel</a>
+<a href="{% url 'notice_list' %}">
+    Cancel
+</a>
 
 {% endblock %}

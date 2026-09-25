@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Courses | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+
+<h1>Our Courses</h1>
+
+<form method="get">
+
+    <input
+        type="text"
+        name="search"
+        placeholder="Search courses..."
+        value="{{ search_query }}"
+    >
+
+    <button type="submit">
+        Search
+    </button>
+
+</form>
+
+{% for course in courses %}
+
+    <div class="course-card">
+        <h2>
+            <a href="{% url 'course_detail' course.id %}">
+                {{ course.name }}
+            </a>
+        </h2>
+
+        <p>
+            <strong>Department:</strong>
+            {{ course.department }}
+        </p>
+
+        <p>
+            <strong>Duration:</strong>
+            {{ course.duration }}
+        </p>
+    </div>
+
+{% empty %}
+
+    <p>No courses found.</p>
+
+{% endfor %}
+
+{% endblock %}

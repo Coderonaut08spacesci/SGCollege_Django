@@ -28,4 +28,28 @@ urlpatterns = [
         views.NoticeDeleteView.as_view(),
         name="notice_delete",
     ),
+    
+    path(
+        "admission/",
+        views.admission,
+        name="admission",
+    ),
+    
+    path(
+        "admission/success/",
+        views.admission_success,
+        name="admission_success",
+    ),
+    
+    path(
+        "contact/", 
+        views.contact, 
+        name="contact"
+        ),
+        
+    path(
+    "contact/success/",
+    views.contact_success,
+    name="contact_success"
+    ),
 ]

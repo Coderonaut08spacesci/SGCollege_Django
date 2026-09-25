@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Admission | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+
+<h1>Admission Application</h1>
+
+<p>
+    Submit your admission application using the form below.
+</p>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">
+        Submit Application
+    </button>
+
+</form>
+
+{% endblock %}

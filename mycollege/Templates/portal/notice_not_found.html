@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Notice Not Found | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+
+<h1>Notice Not Found</h1>
+
+<p>
+    Sorry, the notice you're looking for doesn't exist
+    or has already been deleted.
+</p>
+
+<a href="{% url 'notice_list' %}">
+    ← Back to Notices
+</a>
+
+{% endblock %}
