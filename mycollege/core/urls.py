@@ -7,6 +7,7 @@ urlpatterns = [
     path("about/", views.about, name="about"),
 
     path("courses/", views.course_list, name="course_list"),
+    
     path("courses/<int:course_id>/", views.course_detail, name="course_detail"),
 
     path("fees/", views.fees, name="fees"),
@@ -15,7 +16,18 @@ urlpatterns = [
         "principal-message/",
         views.principal_message,
         name="principal_message"
-    ),
+        ),
 
-    path("syllabus/", views.syllabus, name="syllabus"),
+    path(
+        "syllabus/", 
+        views.syllabus, 
+        name="syllabus"
+        ),
+    
+    path(
+        "photo-gallery/", 
+        views.photo_gallery,
+        name="photo_gallery"
+        ),
 ]
+

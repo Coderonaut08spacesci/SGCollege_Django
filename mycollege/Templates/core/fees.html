@@ -8,8 +8,38 @@ Fees | Sunshine Galaxy College
 
 <h1>Fee Structure</h1>
 
-<p>
-    Information about course fees is displayed here.
-</p>
+{% for fee in fee_structures %}
+
+    <div class="course-card">
+
+        <h2>{{ fee.course }}</h2>
+
+        <p>
+            <strong>Academic Year:</strong>
+            {{ fee.academic_year }}
+        </p>
+
+        <p>
+            <strong>Tuition Fee:</strong>
+            ₹{{ fee.tuition_fee }}
+        </p>
+
+        <p>
+            <strong>Other Fees:</strong>
+            ₹{{ fee.other_fees }}
+        </p>
+
+        <p>
+            <strong>Total:</strong>
+            ₹{{ fee.tuition_fee|add:fee.other_fees }}
+        </p>
+
+    </div>
+
+{% empty %}
+
+    <p>No fee structures available.</p>
+
+{% endfor %}
 
 {% endblock %}

@@ -10,7 +10,7 @@ from django.views.generic import (
 )
 from django.shortcuts import render, redirect
 
-from .forms import AdmissionForm, FeedbackForm, NoticeForm
+from .forms import AdmissionForm, FeedbackForm, NoticeForm, EventForm
 
 from .models import Notice, Event, Feedback, Admission
  
@@ -109,4 +109,41 @@ def contact_success(request):
     return render(
         request,
         "portal/contact_success.html"
-    )                
+    )  
+    
+def event_list(request):
+    events = Event.objects.all()
+
+    return render(
+        request,
+        "portal/events.html",
+        {
+            "events": events
+        }
+    )
+    
+class EventCreateView(UserPassesTestMixin, CreateView):
+    model = Event
+    form_class = EventForm
+    template_name = "portal/event_form.html"
+    success_url = reverse_lazy("event_list")
+
+    def test_func(self):
+        return self.request.user.is_staff
+        
+class EventUpdateView(UserPassesTestMixin, UpdateView):
+    model = Event
+    form_class = EventForm
+    template_name = "portal/event_form.html"
+    success_url = reverse_lazy("event_list")
+
+    def test_func(self):
+        return self.request.user.is_staff 
+        
+class EventDeleteView(UserPassesTestMixin, DeleteView):
+    model = Event
+    template_name = "portal/event_confirm_delete.html"
+    success_url = reverse_lazy("event_list")
+
+    def test_func(self):
+        return self.request.user.is_staff                                 

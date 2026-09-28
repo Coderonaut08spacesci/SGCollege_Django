@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Photo Gallery | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+
+<section class="home-section">
+    <p class="section-label">CAMPUS GALLERY</p>
+
+    <h1>Photo Gallery</h1>
+
+    <p>
+        Explore photographs of Sunshine Galaxy College,
+        its campus, facilities and learning environment.
+    </p>
+</section>
+
+
+<section class="photo-gallery">
+
+    <!-- College Building -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/college_building.jpg' %}"
+            alt="Sunshine Galaxy College building"
+        >
+        <div class="photo-caption">
+            <h3>College Building</h3>
+            <p>Sunshine Galaxy College campus building.</p>
+        </div>
+    </div>
+
+
+    <!-- College Entrance -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/college_entrance.jpg' %}"
+            alt="Sunshine Galaxy College entrance"
+        >
+        <div class="photo-caption">
+            <h3>College Entrance</h3>
+            <p>Main entrance of the college.</p>
+        </div>
+    </div>
+
+
+    <!-- College Gate -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/college_gate.jpg' %}"
+            alt="Sunshine Galaxy College gate"
+        >
+        <div class="photo-caption">
+            <h3>College Gate</h3>
+            <p>Entrance gate of Sunshine Galaxy College.</p>
+        </div>
+    </div>
+
+
+    <!-- College Infrastructure -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/college_infrastructure.webp' %}"
+            alt="College infrastructure"
+        >
+        <div class="photo-caption">
+            <h3>College Infrastructure</h3>
+            <p>College infrastructure and facilities.</p>
+        </div>
+    </div>
+
+
+    <!-- College Mumbai -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/college_mumbai.webp' %}"
+            alt="Sunshine Galaxy College Mumbai"
+        >
+        <div class="photo-caption">
+            <h3>College Campus</h3>
+            <p>Sunshine Galaxy College in Mumbai.</p>
+        </div>
+    </div>
+
+
+    <!-- Library -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/College-Library.jpg' %}"
+            alt="Sunshine Galaxy College library"
+        >
+        <div class="photo-caption">
+            <h3>College Library</h3>
+            <p>A learning and academic environment.</p>
+        </div>
+    </div>
+
+
+    <!-- Principal -->
+    <div class="photo-card">
+        <img
+            src="{% static 'images/principal.jpg' %}"
+            alt="Principal of Sunshine Galaxy College"
+        >
+        <div class="photo-caption">
+            <h3>Principal</h3>
+            <p>Principal of Sunshine Galaxy College.</p>
+        </div>
+    </div>
+
+
+    <!-- College Logo -->
+    <div class="photo-card logo-card">
+        <img
+            src="{% static 'images/logo.png' %}"
+            alt="Sunshine Galaxy College logo"
+        >
+        <div class="photo-caption">
+            <h3>College Logo</h3>
+            <p>Sunshine Galaxy College.</p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

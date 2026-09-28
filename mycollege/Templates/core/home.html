@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 Home | Sunshine Galaxy College
@@ -6,15 +7,242 @@ Home | Sunshine Galaxy College
 
 {% block content %}
 
-<h1>Welcome to Sunshine Galaxy College</h1>
+<!-- =========================
+     HERO SECTION
+========================= -->
 
-<p>
-    Welcome to Sunshine Galaxy College.
-</p>
+<section class="hero-section">
 
-<p>
-    Explore our courses, fees, syllabus, notices and other
-    college information.
-</p>
+    <div class="hero-content">
+
+        <p class="hero-label">
+            WELCOME TO
+        </p>
+
+        <h1>
+            Sunshine Galaxy College
+        </h1>
+
+        <p class="hero-tagline">
+            Learn • Grow • Achieve
+        </p>
+
+        <p>
+            Explore our courses, academic information,
+            campus activities and opportunities for students.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{% url 'course_list' %}" class="primary-button">
+                Explore Courses
+            </a>
+
+            <a href="{% url 'admission' %}" class="secondary-button">
+                Apply Now
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img
+            src="{% static 'images/college_building.jpg' %}"
+            alt="Sunshine Galaxy College campus"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section class="home-section">
+
+    <h2>About Sunshine Galaxy College</h2>
+
+    <p>
+        Sunshine Galaxy College provides students with
+        opportunities to learn, develop their skills and
+        participate in academic and campus activities.
+    </p>
+
+    <p>
+        Explore our courses, fee structure, syllabus,
+        notices, events and admission information.
+    </p>
+
+    <a href="{% url 'about' %}" class="text-link">
+        Learn More About Us →
+    </a>
+
+</section>
+
+
+<!-- =========================
+     PRINCIPAL SECTION
+========================= -->
+
+<section class="principal-section">
+
+    <div class="principal-image">
+
+        <img
+            src="{% static 'images/principal.jpg' %}"
+            alt="Principal of Sunshine Galaxy College"
+        >
+
+    </div>
+
+    <div class="principal-content">
+
+        <p class="section-label">
+            PRINCIPAL'S MESSAGE
+        </p>
+
+        <h2>Message from the Principal</h2>
+
+        <p>
+            Welcome to Sunshine Galaxy College. We believe
+            that education is a journey of learning, growth
+            and achievement.
+        </p>
+
+        <p>
+            Our college encourages students to develop
+            knowledge, skills and confidence through
+            meaningful academic experiences.
+        </p>
+
+        <a href="{% url 'principal_message' %}" class="text-link">
+            Read the Full Message →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CAMPUS / LIBRARY BANNER
+========================= -->
+
+<section class="campus-section">
+
+    <img
+        src="{% static 'images/College-Library.jpg' %}"
+        alt="College library and campus"
+    >
+
+    <div class="campus-overlay">
+
+        <h2>Our Campus</h2>
+
+        <p>
+            A place to learn, explore and grow.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     UPCOMING EVENTS
+========================= -->
+
+<section class="home-section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-label">
+                COLLEGE ACTIVITIES
+            </p>
+
+            <h2>Upcoming Events</h2>
+        </div>
+
+        <a href="{% url 'event_list' %}" class="text-link">
+            View All Events →
+        </a>
+
+    </div>
+
+
+    <div class="event-grid">
+
+        {% for event in events %}
+
+            <div class="event-card">
+
+                <h3>{{ event.title }}</h3>
+
+                <p>
+                    <strong>Date:</strong>
+                    {{ event.date }}
+                </p>
+
+                <p>
+                    <strong>Time:</strong>
+                    {{ event.time }}
+                </p>
+
+                <p>
+                    <strong>Venue:</strong>
+                    {{ event.venue }}
+                </p>
+
+            </div>
+
+        {% empty %}
+
+            <p>No upcoming events available.</p>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     QUICK LINKS
+========================= -->
+
+<section class="quick-links">
+
+    <h2>Explore Sunshine Galaxy College</h2>
+
+    <div class="quick-link-grid">
+
+        <a href="{% url 'course_list' %}">
+            <strong>Courses</strong>
+            <span>Explore our courses</span>
+        </a>
+
+        <a href="{% url 'fees' %}">
+            <strong>Fees</strong>
+            <span>View fee structure</span>
+        </a>
+
+        <a href="{% url 'notice_list' %}">
+            <strong>Notices</strong>
+            <span>Read latest notices</span>
+        </a>
+
+        <a href="{% url 'admission' %}">
+            <strong>Admission</strong>
+            <span>Submit an application</span>
+        </a>
+
+    </div>
+
+</section>
 
 {% endblock %}

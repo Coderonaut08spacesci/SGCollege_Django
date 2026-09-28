@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 About Us | Sunshine Galaxy College
@@ -6,17 +7,109 @@ About Us | Sunshine Galaxy College
 
 {% block content %}
 
-<h1>About Sunshine Galaxy College</h1>
+<section class="hero-section">
 
-<p>
-    Sunshine Galaxy College is a college website developed
-    as a Django mini project.
-</p>
+    <div class="hero-content">
 
-<h2>Our College</h2>
+        <p class="hero-label">
+            ABOUT US
+        </p>
 
-<p>
-    This section provides information about the college.
-</p>
+        <h1>
+            Sunshine Galaxy College
+        </h1>
+
+        <p class="hero-tagline">
+            Learn • Grow • Achieve
+        </p>
+
+        <p>
+            Sunshine Galaxy College is a college website
+            developed as a Django mini project.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img
+            src="{% static 'images/college_building.jpg' %}"
+            alt="Sunshine Galaxy College campus"
+        >
+
+    </div>
+
+</section>
+
+
+<section class="home-section">
+
+    <h2>Our College</h2>
+
+    <p>
+        This section provides information about
+        Sunshine Galaxy College and its academic
+        resources.
+    </p>
+
+    <p>
+        Visitors can explore courses, fee structure,
+        syllabus, notices, events and admission
+        information through the website.
+    </p>
+
+</section>
+
+
+<section class="campus-section">
+
+    <img
+        src="{% static 'images/College-Library.jpg' %}"
+        alt="College library"
+    >
+
+    <div class="campus-overlay">
+
+        <h2>Learning Environment</h2>
+
+        <p>
+            Explore the college's academic information
+            and campus activities.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="home-section">
+
+    <h2>Explore Our Website</h2>
+
+    <div class="quick-link-grid">
+
+        <a href="{% url 'course_list' %}">
+            <strong>Courses</strong>
+            <span>View available courses</span>
+        </a>
+
+        <a href="{% url 'fees' %}">
+            <strong>Fees</strong>
+            <span>View fee structure</span>
+        </a>
+
+        <a href="{% url 'syllabus' %}">
+            <strong>Syllabus</strong>
+            <span>Explore academic curriculum</span>
+        </a>
+
+        <a href="{% url 'event_list' %}">
+            <strong>Events</strong>
+            <span>View college events</span>
+        </a>
+
+    </div>
+
+</section>
 
 {% endblock %}

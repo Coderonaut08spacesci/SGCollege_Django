@@ -1,5 +1,5 @@
 from django import forms
-from .models import Admission, Feedback, Notice
+from .models import Admission, Feedback, Notice, Event
 
 
 class AdmissionForm(forms.ModelForm):
@@ -34,3 +34,15 @@ class NoticeForm(forms.ModelForm):
             "category",
             "is_active",
         ]
+        
+class EventForm(forms.ModelForm):
+    class Meta:
+        model = Event
+        fields = [
+            "title",
+            "description",
+            "date",
+            "time",
+            "venue",
+            "image",
+        ]    

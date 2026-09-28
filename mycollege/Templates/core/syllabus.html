@@ -6,11 +6,69 @@ Syllabus | Sunshine Galaxy College
 
 {% block content %}
 
-<h1>Course Syllabus</h1>
+<section class="home-section">
 
-<p>
-    Information about the syllabus and academic curriculum
-    is available here.
-</p>
+    <p class="section-label">
+        ACADEMICS
+    </p>
+
+    <h1>
+        Course Syllabus
+    </h1>
+
+    <p>
+        Information about the syllabus and academic
+        curriculum is available here.
+    </p>
+
+</section>
+
+
+<section class="home-section">
+
+    <h2>Academic Curriculum</h2>
+
+    <p>
+        The syllabus provides information about the
+        subjects and academic curriculum associated
+        with the courses offered by the college.
+    </p>
+
+    <p>
+        Students can explore the available courses
+        through the Courses section of the website.
+    </p>
+
+    <a href="{% url 'course_list' %}" class="primary-button">
+        Explore Courses
+    </a>
+
+</section>
+
+
+<section class="quick-links">
+
+    <h2>Academic Information</h2>
+
+    <div class="quick-link-grid">
+
+        <a href="{% url 'course_list' %}">
+            <strong>Courses</strong>
+            <span>Explore available courses</span>
+        </a>
+
+        <a href="{% url 'fees' %}">
+            <strong>Fee Structure</strong>
+            <span>View course fee information</span>
+        </a>
+
+        <a href="{% url 'admission' %}">
+            <strong>Admission</strong>
+            <span>Submit an admission application</span>
+        </a>
+
+    </div>
+
+</section>
 
 {% endblock %}

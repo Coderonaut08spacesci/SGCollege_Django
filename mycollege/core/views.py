@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Course
+from .models import Course, Department, FeeStructure
+from portal.models import Event
 
 
 def course_list(request):
@@ -27,17 +28,33 @@ def course_detail(request, course_id):
         "core/course_detail.html",
         {"course": course}
     )
-    
-def home(request):
-    return render(request, "core/home.html")
 
+
+def home(request):
+    events = Event.objects.all()[:3]
+
+    return render(
+        request,
+        "core/home.html",
+        {
+            "events": events
+        }
+    )
 
 def about(request):
     return render(request, "core/about.html")
 
 
 def fees(request):
-    return render(request, "core/fees.html")
+    fee_structures = FeeStructure.objects.all()
+
+    return render(
+        request,
+        "core/fees.html",
+        {
+            "fee_structures": fee_structures
+        }
+    )
 
 
 def principal_message(request):
@@ -46,3 +63,6 @@ def principal_message(request):
 
 def syllabus(request):
     return render(request, "core/syllabus.html")
+
+def photo_gallery(request):
+    return render(request, "core/photo_gallery.html")

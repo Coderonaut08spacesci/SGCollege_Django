@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% if object %}
+        Update Event
+    {% else %}
+        Create Event
+    {% endif %}
+    | Sunshine Galaxy College
+{% endblock %}
+
+{% block content %}
+
+{% if object %}
+    <h1>Update Event</h1>
+{% else %}
+    <h1>Create Event</h1>
+{% endif %}
+
+<form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    {% if object %}
+        <button type="submit">Update Event</button>
+    {% else %}
+        <button type="submit">Create Event</button>
+    {% endif %}
+
+</form>
+
+<a href="{% url 'event_list' %}">
+    Cancel
+</a>
+
+{% endblock %}
