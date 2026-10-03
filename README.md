@@ -17,6 +17,7 @@ The project was developed by taking inspiration from the structure and presentat
 **Reference Website:** https://siesascs.edu.in/
 
 The reference website was used for understanding the general structure and presentation of a college website. The implementation, content, database design, and Django functionality were developed separately for this project.
+Note: The images of my college (SIES College) was used for sample implementation.
 
 ---
 
