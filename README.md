@@ -222,38 +222,80 @@ Stores feedback submitted through the website.
 - Upcoming events
 - Quick links
 
-### About Page
-Provides information about the college.
+| Module | Description |
+|--------|-------------|
+| **About** | Provides information about the college. |
+| **Courses** | Displays available courses and their details. |
+| **Fees** | Displays course fee information. |
+| **Admission** | Allows students to submit admission information through a form. |
+| **Events** | Displays college events with title, date, time, venue, description, and image. |
+| **Notices** | Displays important college announcements. |
+| **Contact** | Provides college contact-related information. |
+| **Photo Gallery** | Displays college-related photographs. |
+| **Principal's Message** | Displays a message from the principal. |
+| **Syllabus** | Provides syllabus-related information. |
+| **Feedback** | Allows users to submit feedback. |
 
-### Courses Page
-Displays available courses and their details.
+---
 
-### Fees Page
-Displays course fee information.
+## 📸 Screenshots
 
-### Admission
-Allows students to submit admission information through a form.
+> 💡 **Tip:** Click on any screenshot to view it in full size.
 
-### Events
-Displays college events with details such as title, date, time, venue, description, and image.
+### 🏠 Home / About Page
+<a href="mycollege/screenshots/home.png" target="_blank">
+  <img src="mycollege/screenshots/home.png" alt="Home Page" width="800">
+</a>
 
-### Notices
-Displays important college announcements.
+### 📚 Courses Page
+<a href="mycollege/screenshots/courses.png" target="_blank">
+  <img src="mycollege/screenshots/courses.png" alt="Courses Page" width="800">
+</a>
 
-### Contact
-Provides college contact-related information.
+### 💰 Fees Page
+<a href="mycollege/screenshots/fees.png" target="_blank">
+  <img src="mycollege/screenshots/fees.png" alt="Fees Page" width="800">
+</a>
 
-### Photo Gallery
-Displays college-related photographs.
+### 🎓 Admission Page
+<a href="mycollege/screenshots/admission.png" target="_blank">
+  <img src="mycollege/screenshots/admission.png" alt="Admission Page" width="800">
+</a>
 
-### Principal's Message
-Displays a message from the principal.
+### 🎉 Events Page
+<a href="mycollege/screenshots/events.png" target="_blank">
+  <img src="mycollege/screenshots/events.png" alt="Events Page" width="800">
+</a>
 
-### Syllabus
-Provides syllabus-related information.
+### 📢 Notices Page
+<a href="mycollege/screenshots/notices.png" target="_blank">
+  <img src="mycollege/screenshots/notices.png" alt="Notices Page" width="800">
+</a>
 
-### Feedback
-Allows users to submit feedback.
+### 📞 Contact Page
+<a href="mycollege/screenshots/contact.png" target="_blank">
+  <img src="mycollege/screenshots/contact.png" alt="Contact Page" width="800">
+</a>
+
+### 🖼️ Photo Gallery
+<a href="mycollege/screenshots/gallery.png" target="_blank">
+  <img src="mycollege/screenshots/gallery.png" alt="Photo Gallery" width="800">
+</a>
+
+### 🎤 Principal's Message
+<a href="mycollege/screenshots/principal.png" target="_blank">
+  <img src="mycollege/screenshots/principal.png" alt="Principal's Message" width="800">
+</a>
+
+### 📖 Syllabus Page
+<a href="mycollege/screenshots/syllabus.png" target="_blank">
+  <img src="mycollege/screenshots/syllabus.png" alt="Syllabus Page" width="800">
+</a>
+
+### 💬 Feedback Page
+<a href="mycollege/screenshots/feedback.png" target="_blank">
+  <img src="mycollege/screenshots/feedback.png" alt="Feedback Page" width="800">
+</a>
 
 ---
 
