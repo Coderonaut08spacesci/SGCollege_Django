@@ -242,60 +242,63 @@ Stores feedback submitted through the website.
 
 > 💡 **Tip:** Click on any screenshot to view it in full size.
 
-### 🏠 Home / About Page
-<a href="mycollege/screenshots/home.png" target="_blank">
-  <img src="mycollege/screenshots/home.png" alt="Home Page" width="800">
-</a>
+11. Application Screenshots
 
-### 📚 Courses Page
-<a href="mycollege/screenshots/courses.png" target="_blank">
-  <img src="mycollege/screenshots/courses.png" alt="Courses Page" width="800">
-</a>
+The following screenshots showcase the main pages and functionalities of the Sunshine Galaxy College website.
 
-### 💰 Fees Page
-<a href="mycollege/screenshots/fees.png" target="_blank">
-  <img src="mycollege/screenshots/fees.png" alt="Fees Page" width="800">
-</a>
+11.1 Core Application
 
-### 🎓 Admission Page
-<a href="mycollege/screenshots/admission.png" target="_blank">
-  <img src="mycollege/screenshots/admission.png" alt="Admission Page" width="800">
-</a>
+Home Page
 
-### 🎉 Events Page
-<a href="mycollege/screenshots/events.png" target="_blank">
-  <img src="mycollege/screenshots/events.png" alt="Events Page" width="800">
-</a>
+<img src="mycollege/screenshots/core/home_full.jpg" alt="Home Page" width="700" />About Page
 
-### 📢 Notices Page
-<a href="mycollege/screenshots/notices.png" target="_blank">
-  <img src="mycollege/screenshots/notices.png" alt="Notices Page" width="800">
-</a>
+<img src="mycollege/screenshots/core/about.jpg" alt="About Page" width="700" />Courses Page
 
-### 📞 Contact Page
-<a href="mycollege/screenshots/contact.png" target="_blank">
-  <img src="mycollege/screenshots/contact.png" alt="Contact Page" width="800">
-</a>
+<img src="mycollege/screenshots/core/courses.jpg" alt="Courses Page" width="700" />Course Search
 
-### 🖼️ Photo Gallery
-<a href="mycollege/screenshots/gallery.png" target="_blank">
-  <img src="mycollege/screenshots/gallery.png" alt="Photo Gallery" width="800">
-</a>
+<img src="mycollege/screenshots/core/courses_search.jpg" alt="Course Search" width="700" />Course Search Using URL Parameters
 
-### 🎤 Principal's Message
-<a href="mycollege/screenshots/principal.png" target="_blank">
-  <img src="mycollege/screenshots/principal.png" alt="Principal's Message" width="800">
-</a>
+<img src="mycollege/screenshots/core/courses_search_url.png" alt="Course Search URL" width="700" />Fee Structure
 
-### 📖 Syllabus Page
-<a href="mycollege/screenshots/syllabus.png" target="_blank">
-  <img src="mycollege/screenshots/syllabus.png" alt="Syllabus Page" width="800">
-</a>
+<img src="mycollege/screenshots/core/fee_structure.jpg" alt="Fee Structure" width="700" />Principal's Message
 
-### 💬 Feedback Page
-<a href="mycollege/screenshots/feedback.png" target="_blank">
-  <img src="mycollege/screenshots/feedback.png" alt="Feedback Page" width="800">
-</a>
+<img src="mycollege/screenshots/core/principal_message.jpg" alt="Principal's Message" width="700" />Syllabus
+
+<img src="mycollege/screenshots/core/syllabus.jpg" alt="Syllabus" width="700" />Photo Gallery
+
+<img src="mycollege/screenshots/core/photo_gallery.jpg" alt="Photo Gallery" width="700" />11.2 Portal Application
+
+Notices
+
+<img src="mycollege/screenshots/portal/notices/notices.jpg" alt="Notices Page" width="700" />Create Notice
+
+<img src="mycollege/screenshots/portal/notices/create_notice.jpg" alt="Create Notice" width="700" />Update Notice
+
+<img src="mycollege/screenshots/portal/notices/update_notice.jpg" alt="Update Notice" width="700" />Delete Notice
+
+<img src="mycollege/screenshots/portal/notices/delete_notice.jpg" alt="Delete Notice" width="700" />Notice Not Found
+
+<img src="mycollege/screenshots/portal/notices/notice_not_found.jpg" alt="Notice Not Found" width="700" />Events
+
+<img src="mycollege/screenshots/portal/events/events.jpg" alt="Events Page" width="700" />Admission Form
+
+<img src="mycollege/screenshots/portal/admission.jpg" alt="Admission Form" width="700" />Admission Successful
+
+<img src="mycollege/screenshots/portal/admission_success.jpg" alt="Admission Success" width="700" />Contact Page
+
+<img src="mycollege/screenshots/portal/contact_us.jpg" alt="Contact Page" width="700" />Contact Form Successful
+
+<img src="mycollege/screenshots/portal/contact_success.jpg" alt="Contact Success" width="700" />11.3 Django Admin
+
+Admin Login
+
+<img src="mycollege/screenshots/admin/admin_login.jpg" alt="Admin Login" width="700" />Admin Dashboard
+
+<img src="mycollege/screenshots/admin/admin.jpg" alt="Admin Dashboard" width="700" />Course Management
+
+<img src="mycollege/screenshots/admin/admin_courses.jpg" alt="Admin Course Management" width="700" />Add Course
+
+<img src="mycollege/screenshots/admin/admin_core_course_add.jpg" alt="Add Course in Admin" width="700" />
 
 ---
 
