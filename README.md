@@ -555,6 +555,16 @@ The project also provides practical experience in organizing a Django applicatio
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+## 🙏 Acknowledgements
+
+Thanks to my project guide, faculty, and the Django community.
+
+---
 ## 18. Author
 
 **Sunshine Galaxy College (S.G College)**
